@@ -4,12 +4,21 @@ Lucene.rb is JRuby wrapper for the Lucene document database.
  
 * Lucene (http://lucene.apache.org/java/docs/index.html) for querying and indexing.
 
+== Status
+
+This library was once included in the neo4j.rb gem (version <= 0.4.6).
+The neo4j wrapper has now replaced this library with the included Java neo4j-lucene component. The main reason for this split was that neo4j now uses two phase commit to keep the databases in sync. 
+
+=== TODO
+* Upgrade to newer lucene 3.x
+* Check the thread synchronization and looking - is this needed ?
+
 == Installation
 
 ==== Install JRuby
 The easiest way to install JRuby is by using RVM, see http://rvm.beginrescueend.com. Otherwise check: http://kenai.com/projects/jruby/pages/GettingStarted#Installing_JRuby  
 
-== The Lucene Module
+== Lucene.rb
 
 Lucene provides:
 * Flexible Queries - Phrases, Wildcards, Compound boolean expressions etc...
