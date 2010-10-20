@@ -12,7 +12,7 @@ def assert_committed
 end
 desc "create the gemspec"
 task :build do
-  system "gem build neo4j.gemspec"
+  system "gem build lucene.gemspec"
 end
 
 desc "release gem to gemcutter"
