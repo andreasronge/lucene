@@ -11,7 +11,7 @@ The neo4j wrapper has now replaced this library with the included Java neo4j-luc
 
 === TODO
 * Upgrade to newer lucene 3.x
-* Check the thread synchronization and looking - is this needed ?
+* Check the thread synchronization and locking - is this needed ?
 
 == Installation
 
