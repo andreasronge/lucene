@@ -11,7 +11,7 @@ def assert_committed
   fail("Can't release gem unless everything is committed") unless status =~ /nothing to commit \(working directory clean\)|nothing added to commit but untracked files present/
 end
 desc "create the gemspec"
-task :build => :clean_all do
+task :build do
   system "gem build neo4j.gemspec"
 end
 
